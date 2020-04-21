@@ -1,4 +1,4 @@
 require "glpk/version"
 
-module Glpk
+module GLPK
 end

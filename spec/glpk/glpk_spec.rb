@@ -1,5 +1,5 @@
-RSpec.describe Glpk do
+RSpec.describe GLPK do
   it "has a version number" do
-    expect(Glpk::VERSION).not_to be nil
+    expect(GLPK::VERSION).not_to be nil
   end
 end
