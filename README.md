@@ -1,10 +1,17 @@
-# Glpk::Ruby
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/glpk/ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+# GLPK Ruby wrapper using FFI
 
 ## Installation
+
+A working GLPK library installation is required.
+
+	> gzip -d glpk-X.Y.tar.gz
+	> tar -x < glpk-X.Y.tar
+	> cd glpk-X.Y
+	> ./configure
+	> make
+	> make check
+	> make install
+	> ldconfig # creates the necessary links and cache to the most recent shared libraries
 
 Add this line to your application's Gemfile:
 
@@ -41,4 +48,4 @@ The gem is available as open source under the terms of the [GNU General Public L
 
 ## Code of Conduct
 
-Everyone interacting in the Glpk::Ruby project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/glpk-ruby/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the GLPK Ruby project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/glpk-ruby/blob/master/CODE_OF_CONDUCT.md).
