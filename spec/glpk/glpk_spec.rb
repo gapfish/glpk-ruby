@@ -10,4 +10,14 @@ RSpec.describe GLPK do
       expect(prob.class).to be(FFI::Pointer)
     end
   end
+
+  describe 'glp set and get prob name' do
+    let(:prob) { GLPK.glp_create_prob }
+    let(:prob_name) { 'glpk_test' }
+    before { GLPK.glp_set_prob_name(prob, prob_name) }
+
+    it "sets a name correctly" do
+      expect(GLPK.glp_get_prob_name(prob)).to eq(prob_name)
+    end
+  end
 end
