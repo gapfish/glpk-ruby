@@ -1,8 +1,8 @@
-require_relative 'lib/glpk/ruby/version'
+require_relative 'lib/glpk/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "glpk-ruby"
-  spec.version       = Glpk::Ruby::VERSION
+  spec.version       = Glpk::VERSION
   spec.authors       = ["Fladson Gomes"]
 
   spec.summary       = %q{Ruby wrapper for the GNU Linear Programming Kit (GLPK).}
